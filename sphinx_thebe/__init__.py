@@ -7,7 +7,7 @@ import json
 
 from pathlib import Path
 
-__version__ = "0.0.7dev0"
+__version__ = "0.0.6"
 
 logger = logging.getLogger(__name__)
 
@@ -211,6 +211,7 @@ def setup(app):
         textinfo=(skip, None),
         text=(skip, None),
         man=(skip, None),
+        override=True,
     )
 
     return {
